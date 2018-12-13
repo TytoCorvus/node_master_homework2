@@ -8,6 +8,7 @@
 
 var api = require('./lib/api');
 var workers = require('./lib/workers');
+var data = require('./lib/data');
 
 (function () {
     //Initialize the workers
@@ -15,4 +16,43 @@ var workers = require('./lib/workers');
 
     //Initialize the server
     api.init();
+
+    /*
+    data.create('menu', 'item1', { 'menuItem': 'This is the first menu item!' }, function (err) {
+        if (err) {
+            console.log("error creating file");
+        }
+        else {
+            console.log("no error creating file");
+        }
+    });
+    
+
+    data.read('menu', 'item1', function (err, data) {
+        if (!err && data) {
+            console.log("Read from file: ", data);
+        }
+        else {
+            console.log("Error: ", err);
+        }
+    });
+    
+
+    data.update('menu', 'item1', { 'message': 'This content is now just a message!' }, function (err) {
+        if (!err && data) {
+            console.log("Rewrite successful");
+        }
+        else {
+            console.log("Error: ", err);
+        }
+    });
+    */
+    data.append('menu', 'item1', { 'message': 'Message too' }, function (err) {
+        if (!err) {
+            console.log("Append successful");
+        }
+        else {
+            console.log("Error: ", err);
+        }
+    });
 })();
