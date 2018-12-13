@@ -12,7 +12,7 @@ environments.default = 'staging';
 environments.staging = {
     'httpPort': 3000,
     'https': {
-        'port': 30001,
+        'port': 3001,
         'key': '',
         'cert': '',
     },
@@ -23,7 +23,7 @@ environments.staging = {
 environments.production = {
     'httpPort': 4000,
     'https': {
-        'port': 40001,
+        'port': 4001,
         'key': '',
         'cert': '',
     },
@@ -33,6 +33,6 @@ environments.production = {
 
 //If the passed environment does not work, we make sure to pass the default
 var env = typeof (process.env.NODE_ENV) == 'string' && typeof (environments[process.env.NODE_ENV]) == 'object' ? process.env.NODE_ENV.toLowerCase() : environments.default;
-var chosenEnvironment = typeof (environments[env]) == 'object' ? environments[env] : environments[environments.default];
+var chosen_environment = typeof (environments[env]) == 'object' ? environments[env] : environments[environments.default];
 
-module.exports = chosenEnvironment;
+module.exports = chosen_environment;
