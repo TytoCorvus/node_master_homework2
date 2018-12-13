@@ -1,9 +1,16 @@
 var ROUTE = require('./route');
+var lib = require('../lib/data');
 
 var directory = {};
 
 var get = function (request, callback) {
-    callback(200, { 'message': 'This is the menu object' });
+    lib.read('misc', 'menu', function (err, data) {
+        if (!err && data) {
+            callback(200, data);
+        } else {
+            callback(404, { 'Error': 'Could not find the menu' });
+        }
+    });
 }
 
 var handlers = {

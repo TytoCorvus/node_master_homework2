@@ -1,0 +1,145 @@
+{
+    "pizza": {
+        "types": [
+            {
+                "name": "Cheese",
+                "price": 5.00,
+                "ingredients": [
+                    "Bread",
+                    "Marinara",
+                    "Cheese"
+                ]
+            },
+            {
+                "name": "Pepperoni",
+                "price": 6.00,
+                "ingredients": [
+                    "Bread",
+                    "Marinara",
+                    "Cheese",
+                    "Pepperoni"
+                ]
+            },
+            {
+                "name": "Hawaiian",
+                "price": 6.25,
+                "ingredients": [
+                    "Bread",
+                    "Marinara",
+                    "Cheese",
+                    "Canadian Bacon",
+                    "Pineapple",
+                    "Jalapeno"
+                ]
+            },
+            {
+                "name": "Combination",
+                "price": 8.50,
+                "ingredients": [
+                    "Bread",
+                    "Marinara",
+                    "Cheese",
+                    "Pepperoni",
+                    "Ham",
+                    "Sausage",
+                    "Onion",
+                    "Bell Pepper",
+                    "Mushroom",
+                    "Olive"
+                ]
+            },
+            {
+                "name": "Margherita",
+                "price": 7.00,
+                "ingredients": [
+                    "Bread",
+                    "Tomato",
+                    "Basil",
+                    "Mozzarella",
+                    "Olive oil"
+                ]
+            },
+            {
+                "name": "Barbeque Chicken",
+                "price": 6.75,
+                "ingredients": [
+                    "Bread",
+                    "Barbeque",
+                    "Cheese",
+                    "Chicken",
+                    "Onion",
+                    "Bell Pepper"
+                ]
+            }
+        ],
+        "sizes": [
+            "personal",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "family"
+        ],
+        "toppings": [
+            "Cheese",
+            "Mozarella",
+            "Feta",
+            "Marinara",
+            "Barbeque Sauce",
+            "Garlic Sauce",
+            "White Sauce",
+            "Pepperoni",
+            "Meatball",
+            "Italian Sausage",
+            "Sausage",
+            "Canadian Bacon",
+            "Ham",
+            "Onion",
+            "Bell Pepper",
+            "Mushroom",
+            "Olive",
+            "Jalapeno",
+            "Arugula",
+            "Olive Oil",
+            "Red Pepper Flakes"
+        ]
+    },
+    "sides": [
+        {
+            "name": "Chicken Wings",
+            "price": 5.50,
+            "ingredients": [
+                "Chicken",
+                "Flour",
+                "Wing Sauce"
+            ]
+        },
+        {
+            "name": "Breadsticks",
+            "price": 2.50,
+            "ingredients": [
+                "Bread",
+                "Butter",
+                "Garlic"
+            ]
+        },
+        {
+            "name": "Mozzarella Sticks",
+            "price": 3.75,
+            "ingredients": [
+                "Bread",
+                "Mozzarella",
+                "Marinara"
+            ]
+        }
+    ],
+    "drinks": [
+        "Coca Cola",
+        "Sprite",
+        "Orange Crush",
+        "Mountain Dew",
+        "Arizona Iced Tea",
+        "Blue Moon",
+        "Angry Orchard"
+    ]
+}
