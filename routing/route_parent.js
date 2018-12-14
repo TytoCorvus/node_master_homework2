@@ -4,10 +4,12 @@
 *
 */
 var menu = require('./menu');
+var users = require('./users');
 var ROUTE = require('./route');
 
 var directory = {
-    'menu': menu
+    'menu': menu,
+    'users': users
 };
 
 var get_post = function (request, callback) {

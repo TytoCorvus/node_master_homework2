@@ -8,7 +8,7 @@
 
 var api = require('./lib/api');
 var workers = require('./lib/workers');
-var data = require('./lib/data');
+var helpers = require('./lib/helpers');
 
 (function () {
     //Initialize the workers
